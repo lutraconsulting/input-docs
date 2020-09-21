@@ -6,4 +6,9 @@ permalink: /howto/setup_themes
 
 # Setup QGIS Map Themes
 
-TODO
+- Open QGIS Desktop with you QGIS Project 
+- In the Layers Panel, click on "Manage Map Themes" (eye-icon)
+![Map Themes](../images/map_themes_setup.png)
+- Add new themes or replace existing themes.
+- Save the project 
+- Resync the project back to your device
