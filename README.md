@@ -2,7 +2,7 @@
 
 This repository contains source files for the InputApp Help Center - https://help.inputapp.io/
 
-The site is built with Jekyll and auto-deployed using GitHub Pages from `web` branch.
+The site is built with Jekyll and auto-deployed using GitHub Pages from `gh-pages` branch.
 
 # For Developers
 
