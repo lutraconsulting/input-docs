@@ -2,6 +2,7 @@
 layout: page
 permalink: /howto/project_config
 ---
+<!--- IMPORTANT: This permlink is referenced from InputApp -->
 
 # Preparing project
 
