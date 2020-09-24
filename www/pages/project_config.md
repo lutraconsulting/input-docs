@@ -142,8 +142,10 @@ it is important to match field format with a given format there.
 ###QgsField type
 How the result value is saved depends on how a QgsField is defined. Following types are supported:
 
-Default values are marked as "**-**"
-####Type: QString
+Default values are marked as "**-**"  
+
+**Type: QString**  
+
 |         field format         	|    widget display   	|               default value               	|        value       	|
 |:----------------------------:	|:-------------------:	|:-----------------------------------------:	|:-------------------:	|
 |             Date             	|          -          	|      `format_date(now(), 'yyyy-MM-dd')`     	|      `''2020-09-09'`     	|
@@ -152,7 +154,10 @@ Default values are marked as "**-**"
 |       Custom (HH-mm-ss)      	|       HH-mm-ss      	|       `format_date(now(), 'HH-mm-ss')`      	|       `'12-34-56'`      	|
 |           Date Time          	|          -          	| `format_date(now(), 'yyyy-MM-dd HH:mm:ss')` 	| `'2020-09-09 12:34:56'` 	|
 | Custom (dd/MM/yyyy HH-mm-ss) 	| dd/MM/yyyy HH-mm-ss 	| `format_date(now(), 'dd/MM/yyyy HH-mm-ss')` 	| `'09/09/2020 12-34-56'` 	|
-####Type: QDate
+
+
+**Type: QDate**  
+
 | field format 	| widget display 	| default value 	|   value   	|
 |:------------:	|:--------------:	|:-------------:	|:----------:	|
 |     Date     	|        -       	|       -       	| `0000-00-00` 	|
@@ -160,7 +165,8 @@ Default values are marked as "**-**"
 |     Date     	|   dd/MM/yyyy   	|     `now()`     	| `09/09/2020` 	|
 
 
-####Type: QDateTime
+**Type: QDateTime**  
+
 | field format 	|    widget display   	| default value 	|        value       	|
 |:------------:	|:-------------------:	|:-------------:	|:-------------------:	|
 |     Time     	|          -          	|       -       	|       `00:00:00`      	|
