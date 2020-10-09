@@ -30,6 +30,12 @@ github_username:  lutraconsulting
 linkedin_username: lutra-consulting
 facebook_username: lutraconsulting
 
+header_pages:
+ - quick-start.md
+ - faq.md
+ - developers.md
+ - support.md
+
 # Build settings
 theme: minima
 plugins:

@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Development
-permalink: /developement/
+title: Developers
 ---
 
 The development of carried on on the [GitHub](https://github.com/lutraconsulting/input).
