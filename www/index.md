@@ -21,6 +21,7 @@ A typical workflow for using Input consists of the following steps:
 -   Input user interface: describes various buttons, options and configurations. See [Input user interface](input_ui)
 
 # How To
+- [Register](howto/registation)
 - [Do QGIS project configuration](howto/project_config)
 - [Moving data between desktop and mobile](howto/data_sync)
 - [Enable digitizing on the field](howto/enable_digitizing)
