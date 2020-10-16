@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /howto/registation
+permalink: /howto/registration
 ---
 
 # Registration
