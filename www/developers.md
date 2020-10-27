@@ -3,6 +3,6 @@ layout: page
 title: Developers
 ---
 
-The development of carried on on the [GitHub](https://github.com/lutraconsulting/input).
+For the Input source code and developers' documentation, you can visit [GitHub](https://github.com/lutraconsulting/input).
 
-For more information on building Input please have a look in [developer documentation](https://github.com/lutraconsulting/input/blob/master/docs/developer/index.md).
+For more information on building Input please see [developer documentation](https://github.com/lutraconsulting/input/blob/master/docs/developer/index.md).
