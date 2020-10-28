@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /howto/enable_digitizing
+permalink: /howto/external_gps
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 
