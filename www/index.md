@@ -13,6 +13,7 @@ layout: page
 - [Enable digitizing on the field](howto/enable_digitizing)
 - [Enable Data Browing](howto/enable_browsing)
 - [Setup QGIS Map Themes](howto/setup_themes)
+- [Use external GPS ](howto/external_gps)
 
 # Other
 - [FAQ](faq)

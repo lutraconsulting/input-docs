@@ -31,4 +31,4 @@ The site is built with Jekyll and auto-deployed using GitHub Pages from `gh-page
   -p 4000:4000 -it jekyll/builder:4.1.0 jekyll serve
 ```
 
-and go to http://localhost:4001/ in your browser
+and go to http://localhost:4000/ in your browser
