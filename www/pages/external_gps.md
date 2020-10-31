@@ -30,6 +30,13 @@ Android offers **Allow mock locations** to use the GPS apps (e.g. Bluetooth GPS 
   -On older Android versions, the developer settings can be made visible under the **Android Settings** > **Applications** > **Development**.
 - Once you have the developers option enabled, go to **System** > **Advanced** > **Developer options** > **Select mock location app** and select **Bluetooth GPS**
 
+![Mcok location](../images/external_gps_android_mock.png)
+
+Now, pair your external GPS device to your mobile/tablet through Bluetooth. Then open the **Bluetooth GPS** app and from the **Select paired GPS device and connect** drop-down menu, select your external GPS. Make sure you have also selected the box for **Enable Mock GPS Provider**. Select **Connect**. You can now open Input and it should be using the external GPS device.
+
+![GPS Bluetooth](../images/external_gps_android_bluetooth.png)
+
+
 ## iOS
 To use your external GPS device with iPhone or iPad, you need to pair the device via Bluetooth. Once the device is paired, the signal from external GPS will be used as the primary source.
 
