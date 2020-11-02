@@ -2,7 +2,7 @@
 layout: page
 permalink: /howto/search_data
 ---
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
+
 
 You can search for the content of your attribute data from Input.
 
