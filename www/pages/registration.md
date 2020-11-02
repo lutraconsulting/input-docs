@@ -3,22 +3,25 @@ layout: page
 permalink: /howto/registration
 ---
 
-# Registration
+To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to register to the [Mergin website](https://help.cloudmergin.com). You can sign up to the service from the [Mergin website([Mergin website](https://help.cloudmergin.com/registration.html) or alternatively from within the app.
 
-1. Launch the Input app from your mobile/tablet device
+# Registration with the Mergin service from Input
 
-2. Select **Home**
+- Launch the Input app from your mobile/tablet device
 
-3. On the top right of the screen,select the icon for profile
+- Select **Home**
 
-4. In the new page, select **Sign up**
+- On the top right of the screen, select the icon for profile/account
 
-5. Fill in the form for registration and select **Sign up**
+- In the new page, select **Sign up**
 
-	![register](../images/input-reg.png)
+	![register](../images/input_sign_in.png)
 
-6. You will receive an email to activate your account. You can follow the instructions in the mail to verify your account (optional)
+- Fill in the form for registration and select **Sign up**
 
-7. You can sign in to your Mergin account
+	![register](../images/input_sign_up.png)
 
-Alternatively, you can sign up to the Mergin service, through [Mergin website](https://help.cloudmergin.com/registration.html)
+- You will receive an email to activate your account. You can follow the instructions in the mail to verify your account (optional)
+
+- You can sign in to your Mergin account
+

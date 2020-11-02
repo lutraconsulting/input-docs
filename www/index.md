@@ -7,7 +7,7 @@ layout: page
 - [Mergin Service Help](https://help.cloudmergin.com) - the documentation about Mergin Cloud Service (Synchronization)
 
 # How To
-- [Register](howto/registration)
+- [Registeration to the Mergin service](howto/registration)
 - [Package QGIS project](howto/package_qgis_project)
 - [Do QGIS project configuration](howto/project_config)
 - [Moving data between desktop and mobile](howto/data_sync)
