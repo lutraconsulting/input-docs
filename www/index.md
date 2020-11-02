@@ -3,11 +3,11 @@ layout: page
 ---
 
 # Quick Start
-- [Quick Start](quick-start.html) - the best place to start reading if you are new to InputApp
+- [Quick Start](quick-start.html) - the best place to start reading if you are new to Input app
 - [Mergin Service Help](https://help.cloudmergin.com) - the documentation about Mergin Cloud Service (Synchronization)
 
 # How To
-- [Registeration to the Mergin service](howto/registration)
+- [Registration to the Mergin service](howto/registration)
 - [Package QGIS project](howto/package_qgis_project)
 - [Do QGIS project configuration](howto/project_config)
 - [Moving data between desktop and mobile](howto/data_sync)

@@ -3,7 +3,7 @@ layout: page
 permalink: /howto/registration
 ---
 
-To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to register to the [Mergin website](https://help.cloudmergin.com). You can sign up to the service from the [Mergin website([Mergin website](https://help.cloudmergin.com/registration.html) or alternatively from within the app.
+To be able to transfer your data to your mobile/tablet device, share your project and track changes, you will need to register to the [Mergin website](https://help.cloudmergin.com). You can sign up to the service from the [Mergin website](https://help.cloudmergin.com/registration.html) or alternatively from within the app.
 
 # Registration with the Mergin service from Input
 
