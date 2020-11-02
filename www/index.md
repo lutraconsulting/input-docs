@@ -11,7 +11,7 @@ layout: page
 - [Do QGIS project configuration](howto/project_config)
 - [Moving data between desktop and mobile](howto/data_sync)
 - [Enable digitizing on the field](howto/enable_digitizing)
-- [Browse attribute data](howto/browse_data)
+- [Browse attribute data](howto/enable_browsing)
 - [Search for records](howto/search_data)
 - [Working with non-spatial tables](howto/working_with_nonspatial_data)
 - [Setup QGIS Map Themes](howto/setup_themes)

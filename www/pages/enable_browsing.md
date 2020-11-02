@@ -2,6 +2,7 @@
 layout: page
 permalink: /howto/enable_browsing
 ---
+<!--- IMPORTANT: This permlink is referenced from InputApp -->
 
 In Input app, in addition to viewing map data, you can view and search attribute forms related to your data or non-spatial tables within your project.
 
