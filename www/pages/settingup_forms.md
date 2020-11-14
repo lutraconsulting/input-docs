@@ -29,3 +29,4 @@ In the sections below, we go through examples of setting up different widgets fo
 - [Form layout](/howto/settingup_forms_layout)
 - [Photos](/howto/settingup_forms_photos)
 - [Date and time](/howto/settingup_forms_datetime)
+- [Checkbox](/howto/settingup_forms_checkbox)
