@@ -32,3 +32,4 @@ In the sections below, we go through examples of setting up different widgets fo
 - [Checkbox](/howto/settingup_forms_checkbox)
 - [Slider](/howto/settingup_forms_slider)
 - [Drop-down menu (value map)](/howto/settingup_forms_valuemap)
+- [Default value](/howto/settingup_forms_defaults)
