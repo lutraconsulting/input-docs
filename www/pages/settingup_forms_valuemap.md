@@ -35,4 +35,6 @@ To use the drop-down widget in the form from Input:
 - The form will appear
 - Under **Data** tab, you can select the **Habitat type:** from the drop-down menu:
 
+**Note:** when you have a large list, Input will open the values in a full screen mode, where you can also search for the values.
+
 ![slider](../images/input_forms_valuemap.png)
