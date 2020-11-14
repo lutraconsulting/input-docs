@@ -30,3 +30,4 @@ In the sections below, we go through examples of setting up different widgets fo
 - [Photos](/howto/settingup_forms_photos)
 - [Date and time](/howto/settingup_forms_datetime)
 - [Checkbox](/howto/settingup_forms_checkbox)
+- [Slider](/howto/settingup_forms_slider)

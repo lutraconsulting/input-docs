@@ -27,7 +27,6 @@ Ensure to save and synchronise your project.
 To use the photo widget in the form from Input:
 
 - Open Input on your device and from **Projects** > **Explore** download **documentation\form_setup**
-
 - Open the project
 - Select **Record** and add a point
 - The form will appear and under **photo** field

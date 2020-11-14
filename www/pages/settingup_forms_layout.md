@@ -39,4 +39,4 @@ To view the new layout in Input:
 - Select **Record** and add a point
 - The form will appear and you can see 3 tabs in your forms
 
-![photos](../images/input_forms_layout.png)
+![layout](../images/input_forms_layout.png)

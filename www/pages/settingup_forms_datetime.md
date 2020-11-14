@@ -30,7 +30,6 @@ Ensure to save and synchronise your project.
 To use the date/time widget in the form from Input:
 
 - Open Input on your device and from **Projects** > **Explore** download **documentation\form_setup**
-
 - Open the project
 - Select **Record** and add a point
 - The form will appear, when selecting the field for date and time a calendar will pop up with the current time automatically set:
