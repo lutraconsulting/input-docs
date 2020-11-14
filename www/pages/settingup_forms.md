@@ -31,3 +31,4 @@ In the sections below, we go through examples of setting up different widgets fo
 - [Date and time](/howto/settingup_forms_datetime)
 - [Checkbox](/howto/settingup_forms_checkbox)
 - [Slider](/howto/settingup_forms_slider)
+- [Drop-down menu (value map)](/howto/settingup_forms_valuemap)

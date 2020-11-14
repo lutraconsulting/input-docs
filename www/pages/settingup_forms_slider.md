@@ -30,7 +30,7 @@ Ensure to save and synchronise your project.
 
 ## Input
 
-To use the date/time widget in the form from Input:
+To use the slider widget in the form from Input:
 
 - Open Input on your device and from **Projects** > **Explore** download **documentation\form_setup**
 - Open the project
