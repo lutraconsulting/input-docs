@@ -7,7 +7,7 @@ For setting up a slider, ensure your field type is an integer.
 
 ## QGIS
 
-To set up a checkbox widget:
+To set up a slider widget:
 
   - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
   - From the layer panel, right-click on **survey** layer and select **Properties**

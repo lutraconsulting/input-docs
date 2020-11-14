@@ -30,7 +30,7 @@ Ensure to save and synchronise your project.
 
 ## Input
 
-To see the defau Input:
+To see the default values in Input:
 
 - Open Input on your device and from **Projects** > **Explore** download **documentation\form_setup**
 - Open the project
