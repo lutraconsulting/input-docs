@@ -36,7 +36,7 @@ Another source of online vector tiles are Qwant maps:
 ## Generating vector tiles for offline use
 In QGIS (3.14+), you can generate your own vector tiles. Alternatively, you can generate vector tiles using OpenMapTiles from OpenStreetMap data.
 
-In the example below, we walk through steps to generate a vector tile using OpenMapTiles for [Limpopo](https://www.openstreetmap.org/relation/349547#map=7/-24.367/29.982)
+In the example below, we walk through steps to generate a vector tile using OpenMapTiles for [Limpopo](https://www.openstreetmap.org/relation/349547#map=7/-24.367/29.982).
 
 Note that instructions below requires familiarity with terminal. In addition your operating system should support **docker**.
 
