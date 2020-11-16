@@ -25,9 +25,25 @@ In this example, we have created the following three groups:
   - Data
   - Location
 
-The form will appear as below in QGIS now:
+  The form will appear as below in QGIS now:
 
-![photos](../images/qgis_forms_layout_attribute.png)
+  ![photos](../images/qgis_forms_layout_attribute.png)
+
+We can set the visibility of **Location** tab depending on the value of **survey** field:
+  - If **survey** is set to **False**, **Location** tab will not be present
+  - If **survey** is set to **True**, **Location** tab will appear
+
+To set the visibility of **Location** depending on the value of **survey**:
+
+  - Select **Location** from the **Form Layout** column
+  - Select the option for **Control Visibility by Expression**
+  - Type the following expression in the box below:
+    `"survey" IS TRUE`
+
+![photos](../images/qgis_forms_layout_visibility.png)
+
+![photos](../images/qgis_forms_layout_visibility_attrib1.png)
+![photos](../images/qgis_forms_layout_visibility_attrib2.png)
 
 ## Input
 
@@ -39,4 +55,5 @@ To view the new layout in Input:
 - Select **Record** and add a point
 - The form will appear and you can see 3 tabs in your forms
 
-![layout](../images/input_forms_layout.png)
+![layout](../images/input_forms_layout1.png)
+![layout](../images/input_forms_layout2.png)
