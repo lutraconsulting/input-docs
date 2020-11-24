@@ -20,6 +20,9 @@ layout: page
 - [Setup QGIS Map Themes](howto/setup_themes)
 - [Use external GPS ](howto/external_gps)
 
+# Case studies
+- [Water access in Limpopo province, South Africa](casestudies/wbr)
+
 # Other
 - [FAQ](faq)
 - [Capturing data and editing forms using Input](using_input)
