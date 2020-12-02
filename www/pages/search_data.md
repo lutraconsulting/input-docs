@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /howto/search_data
+title: Search values from attribute fields
 ---
 
-
-You can search for the content of your attribute data from Input.
+You can search for the content of your attribute data from Input. Input is also capable of **split search**: searching values from multiple fields.
 
 # QGIS project configuration
 

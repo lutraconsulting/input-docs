@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_slider
+title: Slider in forms
 ---
-# Slider
+
 For setting up a slider, ensure your field type is an integer.
 
 ## QGIS

@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /howto/working_with_nonspatial_data
+title: Working with non-spatial tables
 ---
 
 Non-spatial tables are often a key part of a survey project. The tables can be used either on their own to add new data or alternatively as a link to a spatial layer (e.g. value relation).

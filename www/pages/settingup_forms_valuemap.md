@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_valuemap
+title: Drop-down (value map) in forms
 ---
-# Drop-down (value map)
-To present the options for a field as a drop-down menu in the form, you can use **value map** widget in QGIS.
+
+To present the options for a field as a drop-down menu in the form, you can use **Value Map** widget in QGIS.
 
 ## QGIS
 
@@ -20,7 +21,6 @@ To set up a value map widget:
   - Under **General**, for **Alias** type **Habitat type:**
   - Under **Widget Type** section:
     - From the drop-down menu, select **Value Map**
-    - Set the edit widget to **Slider**
     - For **Value** and **Description** part type the following values: In-door, Woodland, Farmland, Grassland, Marine, Peatland and Other.
 
 Ensure to save and synchronise your project.
@@ -34,7 +34,3 @@ To use the drop-down widget in the form from Input:
 - Select **Record** and add a point
 - The form will appear
 - Under **Data** tab, you can select the **Habitat type:** from the drop-down menu:
-
-**Note:** when you have a large list, Input will open the values in a full screen mode, where you can also search for the values.
-
-![slider](../images/input_forms_valuemap.png)

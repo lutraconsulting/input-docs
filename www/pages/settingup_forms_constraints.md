@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_constraints
+title: Constraint enforcement in forms
 ---
-# Constraints
+
 When collecting data, you may want to apply constraints to certain field(s) so that the correct information is entered.
 
 ## QGIS
