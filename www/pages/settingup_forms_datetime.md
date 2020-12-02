@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_datetime
+title: Calendar for date and time
 ---
-# Date and Time
+
 If you want to record time and date when you capture the feature, you need to make sure you have a field with **Date** or **Date and Time** type present in your survey layer. Note that all GIS data formats support these types of field. It is assumed, you use Geopackage layer, hence this field type is supported.
 
 ## QGIS

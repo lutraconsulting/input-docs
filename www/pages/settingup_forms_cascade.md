@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_cascade
+title: Advanced forms with cascade or drill-down forms
 ---
-# Cascade or drill-down forms
-Cascade or drill-down forms are the types of forms that the values listed in one field depend on the value selected in another feild.
+
+Cascade or drill-down forms are the types of forms that the values listed in one field depend on the value selected in another field.
 
 In this example, we have two databases: one contains the type (e.g. fruit, vegetable, flower, etc) and another contains the species for each type (e.g. apple, orange, rose, tomato, etc). We are going to set up the form so that when user selects **type** only **sub-type** related to the type will be listed. For example, when user selects **Fruit** for **type**, the options will be limited to **Apple**, **Orange**, **Fig**, etc.
 
@@ -11,7 +12,7 @@ All the data for types and sub-types are stored within the Geopackage as **type*
 
 ## QGIS
 
-To set up a the cascde form:
+To set up a the cascade form:
 
   - Download and open [this example project](https://public.cloudmergin.com/projects/documentation/form_setup/tree) in QGIS
   - From the layer panel, right-click on **survey** layer and select **Properties**
@@ -37,7 +38,7 @@ To set up a the cascde form:
     - Set the **Value column** to **Species**
     - Under **Filter expression**, type: *"Code" = current_value('type')*
     - You can select **Allow multiple selection** if required
-    
+
 ![photos](../images/qgis_forms_cascade2.png)
 
 Ensure to save and synchronise your project.

@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_photos
+title: Adding photos to form
 ---
-# Photo
+
 When surveying, you might want to take a photo from your camera or attach an existing photo from the device gallery to your survey feature.
 
 ## QGIS

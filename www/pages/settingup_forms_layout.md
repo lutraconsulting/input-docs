@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_layout
+title: Form layout
 ---
-# Form layout
+
 If your form contains more than a handful number of fields, it becomes to difficult to navigate and enter or view the data. In this section, we can change the layout in QGIS.
 
 ## QGIS

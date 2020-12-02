@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_checkbox
+title: Checkbox in from
 ---
-# Checkbox
+
 Checkbox field becomes handy when you want to set up a Yes/No, True/Falss or On/Off in your field. Some file formats, such as Geopackage support **Boolean** data type. If you have a field set as **Boolean**, QGIS automatically assigns the checkbox for widget type.
 
 ## QGIS

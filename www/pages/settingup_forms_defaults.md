@@ -1,8 +1,9 @@
 ---
 layout: page
 permalink: /howto/settingup_forms_defaults
+tile: Defaults and pre-defined values
 ---
-# Defaults and pre-defined values
+
 You can set a default value for your fields. The default value can be a text, number or a QGIS expression. In the example below, we are going to set the default values for **x** and **y** field to be longitude and latitude.
 
 ## QGIS
