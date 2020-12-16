@@ -4,7 +4,9 @@ permalink: /howto/proj
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 
-Note: since Input 0.7.5
+Note: coming in Input 0.8.0
+
+see: https://github.com/lutraconsulting/input/pull/1051
 
 # Using custom PROJ
 
