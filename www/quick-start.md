@@ -1,20 +1,28 @@
 ---
 layout: page
-title: Quick Start
+title: Quick Start Guide
 ---
 
-Input is a simple survey app allowing users to capture data in field.
-Forms and data preparation can be done in QGIS software.
+Input is an intuitive survey app for viewing, editing and capturing spatial data in the field.
 
-Input is not aimed to be a full GIS/mapping application. It is designed
-with simplicity, ease of use and seamless data synchronisation in mind.
+The Quick Start Guide introduces the basics of the app and shows you how to start capturing, sharing and visualising survey data in 5 steps:
 
-A typical workflow for using Input consists of the following steps:
+## [Take the Tour](/quick-start/take-the-tour)
 
--   Preparing project: user loads background and survey layers, set up the forms, apply styling to the layers, set up map themes and define the layers to be used for survey purpose. See [Project preparation](howto/project_config)
+The tour introduces the basics of Input.
 
--   Data/project transfer: once the project set up, users need to transfer data to the device. This can be achieved through [Mergin](https://public.cloudmergin.com). See [Data transfer](howto/data_sync)
+## [Create a Project](/quick-start/create-project)
 
--   Working with Input: map navigation, data editing, including filling the forms, viewing existing data and uploading the changes back to Mergin. See [Using Input](using_input)
+Create your first project using our **Field notes** template.
 
--   Input user interface: describes various buttons, options and configurations. See [Input user interface](input_ui)
+## [Put it on Your Device](/quick-start/put-project-on-device)
+
+Get the project onto your mobile and start capturing data.
+
+## [Sync Your Changes](/quick-start/sync-changes)
+
+Push changes you've made back to Mergin.
+
+## [Share Your Project](/quick-start/share-project)
+
+Share projects with others for collaborative working.

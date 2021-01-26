@@ -3,7 +3,7 @@ layout: page
 ---
 
 # Quick Start
-- [Quick Start](quick-start.html) - the best place to start reading if you are new to Input app
+- [Quick Start](quick-start.html) - start here if you're new to Input
 - [Mergin Service Help](https://help.cloudmergin.com) - the documentation about Mergin Cloud Service (Synchronization)
 
 # How To
