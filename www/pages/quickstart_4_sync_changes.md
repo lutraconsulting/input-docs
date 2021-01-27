@@ -4,7 +4,11 @@ permalink: /quick-start/sync-changes
 title: Sync Your Changes
 ---
 
-[< < < back to Put it on Your Device](/quick-start/put-project-on-device)
+* [Take the Tour](/quick-start/take-the-tour)
+* [Create a Project](/quick-start/create-project)
+* [Put it on Your Device](/quick-start/put-project-on-device)
+* **Sync Your Changes**
+* [Share Your Project](/quick-start/share-project)
 
 So by now you've taken some really insightful field notes and great 
 photos and want to sync these changes back to your project.
@@ -28,4 +32,8 @@ device.
 
 Let's now see how we can share our project.
 
-[> > > on to Share Your Project](/quick-start/share-project)
+* [Take the Tour](/quick-start/take-the-tour)
+* [Create a Project](/quick-start/create-project)
+* [Put it on Your Device](/quick-start/put-project-on-device)
+* **Sync Your Changes**
+* [Share Your Project](/quick-start/share-project)

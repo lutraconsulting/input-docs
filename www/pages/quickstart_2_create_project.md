@@ -4,7 +4,11 @@ permalink: /quick-start/create-project
 title: Create a Project
 ---
 
-[< < < back to Take the Tour](/quick-start/take-the-tour)
+* [Take the Tour](/quick-start/take-the-tour)
+* **Create a Project**
+* [Put it on Your Device](/quick-start/put-project-on-device)
+* [Sync Your Changes](/quick-start/sync-changes)
+* [Share Your Project](/quick-start/share-project)
 
 The easiest way to create a new project is from a template.
 
@@ -43,4 +47,8 @@ Your namespace will look different to that shown in the example above.
 The project has now been created on Mergin. The next step is to get it onto 
 our device.
 
-[> > > on to Put it on Your Device](/quick-start/put-project-on-device)
+* [Take the Tour](/quick-start/take-the-tour)
+* **Create a Project**
+* [Put it on Your Device](/quick-start/put-project-on-device)
+* [Sync Your Changes](/quick-start/sync-changes)
+* [Share Your Project](/quick-start/share-project)

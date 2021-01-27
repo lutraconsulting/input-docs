@@ -4,7 +4,11 @@ permalink: /quick-start/share-project
 title: Share Your Project
 ---
 
-[< < < back to Sync Your Changes](/quick-start/sync-changes)
+* [Take the Tour](/quick-start/take-the-tour)
+* [Create a Project](/quick-start/create-project)
+* [Put it on Your Device](/quick-start/put-project-on-device)
+* [Sync Your Changes](/quick-start/sync-changes)
+* **Share Your Project**
 
 Now you know how to create a project, get it onto your mobile, make changes 
 and sync them back to Mergin. Let's now see how we can share our project 
@@ -51,3 +55,9 @@ Input workflow:
 * Working with Input: map navigation, data editing, including filling the forms, viewing existing data and uploading the changes back to Mergin. See [Using Input](using_input)
 
 * Input user interface: describes various buttons, options and configurations. See [Input user interface](input_ui)
+
+* [Take the Tour](/quick-start/take-the-tour)
+* [Create a Project](/quick-start/create-project)
+* [Put it on Your Device](/quick-start/put-project-on-device)
+* [Sync Your Changes](/quick-start/sync-changes)
+* **Share Your Project**
