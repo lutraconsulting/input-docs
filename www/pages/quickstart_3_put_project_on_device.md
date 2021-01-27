@@ -4,7 +4,11 @@ permalink: /quick-start/put-project-on-device
 title: Get the Project onto Your Device
 ---
 
-[< < < back to Create a Project](/quick-start/create-project)
+* [Take the Tour](/quick-start/take-the-tour)
+* [Create a Project](/quick-start/create-project)
+* **Put it on Your Device**
+* [Sync Your Changes](/quick-start/sync-changes)
+* [Share Your Project](/quick-start/share-project)
 
 We're almost ready to start surveying - we just need to get the project onto 
 our device.
@@ -28,4 +32,8 @@ At this stage you can open the project from *Home* and start adding notes
 and map features. In the next section we'll see how to push changes back 
 to Mergin.
 
-[> > > on to Sync Your Changes](/quick-start/sync-changes)
+* [Take the Tour](/quick-start/take-the-tour)
+* [Create a Project](/quick-start/create-project)
+* **Put it on Your Device**
+* [Sync Your Changes](/quick-start/sync-changes)
+* [Share Your Project](/quick-start/share-project)
