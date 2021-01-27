@@ -7,7 +7,7 @@
   min-height: $spacing-unit * 1.865;
   background: $brand-color;
   color: white;
-  
+
   // Positioning context for the mobile navigation icon
   position: relative;
 }
@@ -24,7 +24,7 @@
   &:visited {
     color: white; //$grey-color-dark;
   }
-  
+
 }
 
 .site-nav {
@@ -94,9 +94,11 @@
     .page-link {
       display: block;
       padding: 5px 10px;
+      color:#166146;
 
       &:not(:last-child) {
         margin-right: 0;
+        margin-left: 0;
       }
       margin-left: 20px;
     }
