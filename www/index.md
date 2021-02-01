@@ -19,6 +19,7 @@ layout: page
 - [Working with non-spatial tables](howto/working_with_nonspatial_data)
 - [Setup QGIS Map Themes](howto/setup_themes)
 - [Use external GPS ](howto/external_gps)
+- [Reuse last entered values during digitizing](howto/reuse_entered_values)
 
 # Other
 - [FAQ](faq)
