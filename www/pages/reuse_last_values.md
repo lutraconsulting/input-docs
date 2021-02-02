@@ -3,8 +3,6 @@ layout: page
 permalink: /howto/reuse_entered_values
 ---
 
-<!--- IMPORTANT: This permlink is referenced from InputApp -->
-
 # Reuse last entered values
 
 Input supports faster digitizing of similar features by allowing user to reuse values of repeating attributes. When attribute is marked for reuse, next created feature will have desired attributes prefilled with values from last feature.
