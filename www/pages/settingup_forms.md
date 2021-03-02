@@ -50,3 +50,6 @@ To enforce constraints on a field in your forms, visit [constraints setup](/howt
 
 ## Advanced value relation with drill-down forms
 To have a more advanced form with drill-down menu option, see [cascade form setup](/howto/settingup_forms_cascade)
+
+## QR code reader
+To be able to use your camera in forms to scan QR codes and populate the text in the field, see [QR code reader](/howto/settingup_forms_qrcode)
