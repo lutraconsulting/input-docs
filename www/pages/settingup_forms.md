@@ -21,6 +21,7 @@ In the sections below, we go through examples of setting up different widgets fo
 |QGIS edit widget name   | Description  |Preview in Input   |
 |---|---|---|
 |Text Edit  |[Text](/howto/settingup_forms_text)   | ![layout](../images/input_forms_text.png) |
+|QR & barcode scanner  |[Camera to scan QR and barcode](/howto/settingup_forms_qrcode)   | ![layout](../images/input_forms_qrcode1.png) |
 |Range   |[Numeric field](/howto/settingup_forms_number)   | ![layout](../images/input_forms_numbers.png)  |
 |Range   |[Slider](/howto/settingup_forms_slider)   | ![layout](../images/input_forms_slider1.png)  |
 |Date&Time   |[Calendar with time](/howto/settingup_forms_datetime)  |![layout](../images/input_forms_datetime1.png)   |
