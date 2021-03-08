@@ -35,6 +35,8 @@ Input supports collaborative editing, if you use Geopackage file format for your
 
  Input does not support changing of the data schema. So, if you delete or add columns to your survey layer, Input cannot detect the change. Therefore, it is always recommended to stick with the same attribute table structure once you have set up your survey layer.
 
+ Another reason you might be seeing conf files is due to [storing raster data in Geopackage](https://github.com/lutraconsulting/geodiff/issues/91) for your survey layer. We recommend using GeoTIF or at least a separate Geopackage database for all your raster files. 
+
  **I cannot synchronise changes from the Mergin server**
 
  - Make sure you have data connectivity.
