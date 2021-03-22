@@ -1,7 +1,7 @@
 ---
 layout: page
-title: GPS accuracy
 permalink: /howto/gps_accuracy
+title: GPS accuracy
 ---
 <!--- IMPORTANT: This permlink is referenced from InputApp -->
 
