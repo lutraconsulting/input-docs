@@ -27,3 +27,9 @@ layout: page
 - [Input user interface](input_ui)
 - [License](licensing)
 - Read more about the app [privacy policy](privacy)
+
+# External Resources
+
+Presentations from QGIS Open Day:
+- [Input and Mergin: collect data, sync and collaborate with ease](https://www.youtube.com/watch?v=UT5xcvcNQR0) - by Saber Razmjooei, 51min (March 2021)
+- [Using QGIS, Input, Mergin, and Metabase to conduct a WASH survey in the Waterberg](https://www.youtube.com/watch?v=lxgUY7zcH1Q) - by Gavin Fleming, 60min (March 2021)
