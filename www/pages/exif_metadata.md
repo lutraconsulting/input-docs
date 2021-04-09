@@ -26,9 +26,10 @@ Therefore you can use a value from a text field of an attachment type as a param
 
 `read_exif(@project_home + '/' + "photo", 'GPSImgDirection')`
 
-You can use both `Take a photo` or `From gallery` actions of attachment widget. While capturing an photo with camera, 
-GPS EXIF data are added to the photo metadata. Make sure that location permission are allowed.
+You can use both `Take a photo` or `From gallery` actions of the attachment widget. While capturing a photo with a camera, 
+GPS EXIF data are added to the photo metadata. Make sure that location permissions are allowed in Input and also 
+for your camera app.
 
-For further examples you can check field definitions of project **_lutraconsulting/test_exif_** accessible on Mergin.
+For further examples you can check fields definitions of project **_lutraconsulting/test_exif_** accessible on Mergin.
 
 ![photos](../images/gps_exif_metadata.png)
