@@ -19,7 +19,7 @@ Input app, only displays a summary of the table for all the data. By default, it
 
 ![display_name](../images/qgis_properties_display.png)
 
-# Brows data forms in Input
+# Browse data forms in Input
 You can now open the attribute table in Input, by:
 
 - Open a project in Input
@@ -29,3 +29,18 @@ You can now open the attribute table in Input, by:
 The attribute table should appear:
 
 ![display_name](../images/input_browse_data.png)
+
+## Search features
+While browsing data in the attribute table, you can use search to quickly find features. 
+
+The search: 
+- looks up for a match in all searchable attributes values.
+- is not case sensitive
+
+In Layer properties (left click on layer on the Layers panel -> Properties -> "Fields"), you can define which attributes 
+(fields) are searchable and which are not. By default, all attributes are searchable.
+
+![display_name](../images/not_searchable.png)
+
+If a field is marked in a field configuration as **Not searchable**, the search will omit field values in the compare function. So if you 
+search for specific existing value of such field, you should expect no results.
