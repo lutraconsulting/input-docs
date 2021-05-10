@@ -19,6 +19,16 @@ Following functions are supported:
 - `read_exif_longitude('<ABSOLUTE_PATH_TO_IMAGE>')` 
     - returning decimal number
 
+Note that **location tags have to be allowed** in a camera settings. You can find the option as following:
+
+##### Android
+Open Camera app -> Camera settings -> Location tags. 
+![photos](../images/android_geo_tags.jpg)
+
+##### iOS
+Open Settings -> Privacy -> Location Services -> Camera (app).
+![photos](../images/ios_geo_tags.PNG)
+ 
 
 ## Use it with Photo widget
 The parameter `<ABSOLUTE_PATH_TO_IMAGE>` can be set with an expression using value of another field. 
