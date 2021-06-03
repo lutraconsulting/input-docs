@@ -21,6 +21,7 @@ layout: page
 - [Use external GPS ](howto/external_gps)
 - [Reuse last entered values during digitizing](howto/reuse_entered_values)
 - [Read EXIF metadata](howto/exif_metadata)
+- [Use position variables](howto/position_variables)
 
 # Other
 - [FAQ](faq)
