@@ -32,3 +32,6 @@ To use the numeric widget in your form from Input:
 - Under **Group1** tab, you can type within the box under **Number** field:
 
 ![slider](../images/input_forms_number1.png)
+
+
+Further details about number fields and their configuration with the range widget can be found [here](/howto/settingup_forms_range_widget)).
