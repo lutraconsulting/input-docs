@@ -22,6 +22,7 @@ layout: page
 - [Reuse last entered values during digitizing](howto/reuse_entered_values)
 - [Read EXIF metadata](howto/exif_metadata)
 - [Use position variables](howto/position_variables)
+- [Selective sync - Exclude photos from synchronization](howto/selective_sync)
 
 # Other
 - [FAQ](faq)
