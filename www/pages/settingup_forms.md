@@ -40,7 +40,7 @@ To have multiple tabs with subgroups in your form (with conditional visibility) 
 
 ## Default value
 
-To have pre-populated values within the field (e.g. name of the surveyor, date/time of the survey, latitude and longitude of the feature), see [defaults in forms](/howto/settingup_forms_defaults):
+To have pre-populated values within the field (e.g. name of the surveyor, date/time of the survey, latitude and longitude of the feature), see [defaults in forms](./settingup_forms_defaults):
 
 ![layout](../images/input_forms_defaults1.png)
 

@@ -4,6 +4,8 @@ This repository contains source files for the InputApp Help Center - https://hel
 
 The site is built with Jekyll and auto-deployed using GitHub Pages from `gh-pages` branch.
 
+<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg"><a href="https://merginmaps.com/community/join">Join our community chat</a><br/>and ask questions!</div>
+
 # For Developers
 
 ## Locally

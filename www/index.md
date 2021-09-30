@@ -2,6 +2,8 @@
 layout: page
 ---
 
+<div><img align="left" width="45" height="45" src="https://raw.githubusercontent.com/MerginMaps/docs/main/src/.vuepress/public/slack.svg"><a href="https://merginmaps.com/community/join">&nbsp;&nbsp;Join our community chat</a><br/>&nbsp;&nbsp;and ask questions!</div> <br/>
+
 # Quick Start
 - [Quick Start](quick-start.html) - start here if you're new to Input
 - [Mergin Service Help](https://help.cloudmergin.com) - the documentation about Mergin Cloud Service (Synchronization)
