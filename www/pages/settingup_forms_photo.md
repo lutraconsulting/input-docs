@@ -1,5 +1,5 @@
 ---
-category: 'Mobile Input App'
+layout: page
 permalink: /howto/settingup_forms_photos
 title: Adding photos to form
 ---
