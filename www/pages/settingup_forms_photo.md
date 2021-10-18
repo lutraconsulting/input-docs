@@ -1,6 +1,6 @@
 ---
 category: 'Mobile Input App'
-permalink: settingup_forms_photos
+permalink: /howto/settingup_forms_photos
 title: Adding photos to form
 ---
 
