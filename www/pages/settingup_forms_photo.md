@@ -21,6 +21,13 @@ To set up a photo widget:
     - From the drop-down menu, select **Attachment**
     - Under **Path**, select **Relative paths** and **Relative to project path**
 
+
+It is often the case that you want to see the photos from your survey appear in the form. To enable that in QGIS:
+    - Under **Integrated document viewer**
+    - For **Type** select **Image**
+    
+![photos](/images/qgis_forms_photo-document_type.png)
+
 Ensure to save and synchronise your project.
 
 ## Input

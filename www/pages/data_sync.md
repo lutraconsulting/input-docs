@@ -25,7 +25,7 @@ to Mergin project webpage.
 ### Android
 This can be done by connecting your mobile device to the computer and copying data files to/from the device.
 Once your Android phone or tablet is recognized by the operating system after connecting it using USB cable,
-you can use file browser to copy files. On Android devices, data are stored in `INPUT/projects` directory.
+you can use file browser to copy files. On Android devices, data are stored in `Internal shared storage/Android/data/uk.co.lutraconsulting/files/projects/` directory.
 
 ### iOS
 Input supports iTunes file sharing. Note that iTunes doesn't allow you to browse or edit data from the app data folder,
