@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>FAQ | Input Help</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="FAQ" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Survey made easy" />
+<meta property="og:description" content="Survey made easy" />
+<link rel="canonical" href="/faq" />
+<meta property="og:url" content="/faq" />
+<meta property="og:site_name" content="Input Help" />
+<script type="application/ld+json">
+{"description":"Survey made easy","url":"/faq","@type":"WebPage","headline":"FAQ","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Input Help" /><!-- based on default minima template https://github.com/jekyll/minima/blob/master/_includes/google-analytics.html -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144776738-1"></script>
+<script>
+  window['ga-disable-UA-144776738-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // we need more settings than in default template
+  gtag('config', 'UA-144776738-1', {
+    'linker': {
+      'domains': ['inputapp.io', 'cloudmergin.com'],
+      'accept_incoming': true
+    },
+    'anonymize_ip': true
+  });
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+    <img src="https://inputapp.io/img/logo.svg" style="margin-top: -10px" width="90">
+    <!--Input Help-->
+    </a> <span class="site-title"> &nbsp; Help Center</span><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/quick-start.html">Quick Start Guide</a><a class="page-link" href="/faq">FAQ</a><a class="page-link" href="/developers.html">Developers</a><a class="page-link" href="/support">Support</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">FAQ</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="faq">FAQ</h1>
+
+<p>Here is a list of common issues you might experience:</p>
+
+<p><strong>What is an Input project?</strong></p>
+
+<p>An Input project consists of a folder (with subfolders) with <strong>one</strong> QGIS project file and all its associated layers. The QGIS project is linked with relative path (the default option in QGIS) to all the layers.</p>
+
+<p><strong>Why am I not able to see my project in the list (under Input &gt; Projects &gt; My Projects)</strong></p>
+
+<p>It is likely that you have no QGIS project (the extension for QGIS project is qgs or qgz file) or more than one project in your folder. To have a valid Input project you need <strong>one and only one</strong> QGIS project in your folder.</p>
+
+<p><strong>I have loaded my project in Input, but I cannot see all my layers</strong></p>
+
+<p>You need to package all your layers with the folder uploaded to Mergin. They should be also linked accordingly to the packaged folder. For example, if you have a project where it has links to your shared server layers, those layers will not appear in Input.</p>
+
+<p>If you are linking to an online layer (e.g. PostGIS/WMS), you need to have internet to the server.</p>
+
+<p><strong>When I press Record, Input tells me there is no survey layers in the project</strong></p>
+
+<ul>
+  <li>Ensure you have all your survey layers uploaded with the project</li>
+  <li>Ensure your survey layer is not marked as Read-only (Project Properties &gt; Data Sources)</li>
+</ul>
+
+<p><strong>When I synchronise my data, I get some files with ‘conf’ in their names</strong></p>
+
+<p>Input supports collaborative editing, if you use Geopackage file format for your survey layer. If you use for example ESRI Shapefile for your survey layer, Input is not able to detect changes from other users and overwrites them. It will keep a copy of the overwritten files with ‘conf’ in the name. So, in summary, <strong>always use Geopackage for your survey layer</strong>.</p>
+
+<p><strong>I use Geopackage for my survey layer, but I still see ‘conf’ files</strong></p>
+
+<p>Input does not support changing of the data schema. So, if you delete or add columns to your survey layer, Input cannot detect the change. Therefore, it is always recommended to stick with the same attribute table structure once you have set up your survey layer.</p>
+
+<p>Another reason you might be seeing conf files is due to <a href="https://github.com/lutraconsulting/geodiff/issues/91">storing raster data in Geopackage</a> for your survey layer. We recommend using GeoTIFF or at least a separate Geopackage database for all your raster files.</p>
+
+<p><strong>I cannot synchronise changes from the Mergin server</strong></p>
+
+<ul>
+  <li>Make sure you have data connectivity.</li>
+  <li>Ensure you have not exceeded or reached your storage allowance</li>
+</ul>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Input Help</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Input Help</li><li><a class="u-email" href="mailto:info@lutraconsulting.co.uk">info@lutraconsulting.co.uk</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">lutraconsulting</span></a></li><li><a href="https://github.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">lutraconsulting</span></a></li><li><a href="https://www.linkedin.com/in/lutra-consulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">lutra-consulting</span></a></li><li><a href="https://www.twitter.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">lutraconsulting</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Survey made easy</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

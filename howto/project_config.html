@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Input Help | Survey made easy</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Input Help" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Survey made easy" />
+<meta property="og:description" content="Survey made easy" />
+<link rel="canonical" href="/howto/project_config" />
+<meta property="og:url" content="/howto/project_config" />
+<meta property="og:site_name" content="Input Help" />
+<script type="application/ld+json">
+{"description":"Survey made easy","url":"/howto/project_config","@type":"WebPage","headline":"Input Help","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Input Help" /><!-- based on default minima template https://github.com/jekyll/minima/blob/master/_includes/google-analytics.html -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144776738-1"></script>
+<script>
+  window['ga-disable-UA-144776738-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // we need more settings than in default template
+  gtag('config', 'UA-144776738-1', {
+    'linker': {
+      'domains': ['inputapp.io', 'cloudmergin.com'],
+      'accept_incoming': true
+    },
+    'anonymize_ip': true
+  });
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+    <img src="https://inputapp.io/img/logo.svg" style="margin-top: -10px" width="90">
+    <!--Input Help-->
+    </a> <span class="site-title"> &nbsp; Help Center</span><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/quick-start.html">Quick Start Guide</a><a class="page-link" href="/faq">FAQ</a><a class="page-link" href="/developers.html">Developers</a><a class="page-link" href="/support">Support</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <div class="post-content">
+    <!--- IMPORTANT: This permlink is referenced from InputApp -->
+
+<h1 id="preparing-project">Preparing project</h1>
+
+<p>Project preparation is done in QGIS. For more information about loading
+layers, styling the data and creating map themes, visit QGIS
+documentation page. In addition, Input uses some of the features within
+the project to help with visualisation, data capturing and interrogation
+of the data. Below are the key parts used by Input:</p>
+
+<h2 id="background-layers">Background layers</h2>
+
+<p>If you have internet connectivity, you can use a WM(T)S or XYZ layer as
+your background map. QGIS can also reads local XYZ tiles.</p>
+
+<p><strong>Note:</strong> that for XYZ tiles, ensure to change the tile resolution to Standard in your connection settings in QGIS. This will ensure the fonts are readable on the high resolution screens (applicable to the majority of the recent phones which come with high DPI screens).</p>
+
+<p><img src="../images/xyz_settings.png" alt="Connection settings for XYZ" /></p>
+
+<p><strong>Note:</strong> you also need to change resampling method for WM(T)S layer to ensure the texts are readable on HiDPi screens.</p>
+
+<p>If you are using a vector layer for background layer:</p>
+
+<ul>
+  <li>
+    <p>Ensure to use a simplified geometry version of your data. This will help with smooth map navigation.</p>
+  </li>
+  <li>
+    <p>All vector layers not intended to be used as survey layers, have to be set as read-only. To make a vector layer read-only in QGIS, from the main menu select Project &gt; Properties. Within the window, select Data Source tab and select the Read-only option for the layers you do not want to be used as survey layer in Input.</p>
+  </li>
+</ul>
+
+<h2 id="project-extent">Project extent</h2>
+<p>In Input app, there is an option to zoom to the project extent. If not set, Input zooms to all visible layers. This is not particularly convenient when you have a layer with a large/global extent (e.g. Open Street Map).</p>
+
+<p>To set the project extent: from <strong>Project</strong> &gt; <strong>Properties</strong>, select <strong>QGIS Server</strong> (not the most obvious location!). Under <strong>WMS capabilities</strong> select the option for <strong>Advertised extent</strong> and either enter the coordinate extent of your project bounding box or use the canvas extent.</p>
+
+<h2 id="survey-layer">Survey layer</h2>
+
+<p>Vector layers can be used as survey layer
+in Input. You can apply style and set up the forms according to the QGIS
+documentation.</p>
+
+<h2 id="layer-properties">Layer properties</h2>
+<p>The following properties of a layer in QGIS project will be additionally used in Input:</p>
+
+<h3 id="settings-for-input-preview-panel">Settings for Input preview panel</h3>
+<p>Similar to Google map, when a feature is identified on the map a preview panel will appear. To enable a layer being identified, the option should be enabled in QGIS desktop, under <strong>Project properties</strong>. For setting the preview panel, you need to open <strong>Layer Properties</strong> and select <strong>Display</strong> tab.</p>
+
+<ul>
+  <li>
+    <p>title - this will use <strong>Display Name</strong> (in layer properties &gt; Display tab) which can be a field name or an expression.</p>
+  </li>
+  <li>
+    <p>content - there are three options for what to show in content area: 1. field values, 2. image, 3. HTML. This will use “HTML Map Tip” (in layer properties &gt; Display tab). QGIS always interprets the content of map tip as being HTML, however Input extends the syntax to allow two more modes. If the map tip is not specified, Input will try to use the first three fields and show their attribute values.</p>
+  </li>
+</ul>
+
+<h4 id="field-values">Field values</h4>
+
+<p>Sample map tip content that will show “description” and “time” field values:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># fields
+description
+time
+</code></pre></div></div>
+
+<p>If the map tip content has <code class="language-plaintext highlighter-rouge"># fields</code> marker on the first line, the following lines will be understood as field names that should be listed in the preview.
+At most three fields will be shown. Expressions are not allowed.</p>
+
+<h4 id="image">Image</h4>
+
+<p>Sample map tip content that will cause an image to be show specified by file path in field “image_1” (containing path relative to the project directory):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># image
+file:///[%@project_folder%]/[% "image_1" %]
+</code></pre></div></div>
+
+<p>If the map tip has <code class="language-plaintext highlighter-rouge"># image</code> marker on the first line, the following line is understood as the URL for the image. It can be a regular file on the file system, but it could be even a remote image from network. Expressions embedded in the image URL will be evaluated (enclosed in <code class="language-plaintext highlighter-rouge">[% 1+1 %]</code>).</p>
+
+<h4 id="html">HTML</h4>
+
+<p>Sample map tip content that will show render as HTML page:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt;[% "notes" %]&lt;/p&gt;
+</code></pre></div></div>
+
+<p>If the map tip does not contain any special marker, it is assumed that the map tip is HTML content. Only a limited subset of HTML is supported - see https://doc.qt.io/qt-5/richtext-html-subset.html</p>
+
+<p>Example of the preview panel in Input and QGIS tooltip set up can be seen below:</p>
+
+<p><img src="../images/qgis_properties_display.png" alt="Display setting in QGIS" /></p>
+
+<p><img src="../images/input_preview_panel.png" alt="Preview panel in Input based on Display settings in QGIS" /></p>
+
+<h3 id="forms">Forms</h3>
+<p>This section briefly describes behaviour of some types of widgets with several configurations.<br />
+Make use of Value Map widget in your forms to simplify filling the forms during survey.</p>
+
+<h4 id="attachement-external-resource-widget">Attachement (External resource) widget</h4>
+<p>To be able to attach photos to a survey feature, you will need to have an attribute column in your survey layer. Within the form setting, ensure to set Widget type to Attachment.
+The widget is compatible with field of type QString. It suppose to store absolute/relative path to an image.</p>
+
+<h5 id="field-configuration">Field configuration:</h5>
+<ul>
+  <li><strong>Widget type</strong> - <strong>Attachment</strong> as the only option to work with images</li>
+  <li><strong>Default path</strong> - Defines where an image will be saved. Evaluation of <code class="language-plaintext highlighter-rouge">default path</code> configuration is in following order:
+    <ul>
+      <li>evaluate default path expression if defined,</li>
+      <li>use default path value if not empty,</li>
+      <li>use project home folder.</li>
+    </ul>
+  </li>
+  <li><strong>Relative path</strong>
+    <ul>
+      <li><strong>unchecked</strong> -  the final value of a attachment field has absolute path,</li>
+      <li><strong>relative to project path</strong> - relative to project home folder path (where project file is located),</li>
+      <li><strong>relative to default path</strong> - relative to defined default path. See section above if it is not defined.</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="examples">Examples</h5>
+<p>Lets define project home folder as ‘path/to/project’, where a project file is located.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">default path</th>
+      <th style="text-align: center">relative to</th>
+      <th style="text-align: center">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;path/to/project&gt;/image.jpg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">project home</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">image.jpg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">default path</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">image.jpg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">@project_folder</code></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;path/to/project&gt;/image.jpg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">@project_folder</code></td>
+      <td style="text-align: center">project home</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">image.jpg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">@project_folder</code></td>
+      <td style="text-align: center">default path</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">image.jpg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">@project_home + '/photos'</code></td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;path/to/project&gt;/photos/image.jpg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">@project_home + '/photos'</code></td>
+      <td style="text-align: center">project home</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">/photos/image.jpg</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">@project_home + '/photos'</code></td>
+      <td style="text-align: center">default path</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">image.jpg</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="datetime-widget">Date/Time widget</h4>
+
+<h5 id="field-configuration-1">Field configuration:</h5>
+<ul>
+  <li><strong>Widget type</strong> - <strong>Date/Time</strong> as the only option to use a date time widget</li>
+  <li><strong>Field format</strong> - currently supported Date, DateTime, Time, Custom</li>
+  <li><strong>Widget display</strong> - supported both Default or Custom</li>
+  <li><strong>Calendar popup</strong> - currently ignored, Input datetime widget <strong>always</strong> acts like it is <strong>checked</strong></li>
+  <li><strong>Default value</strong> - has to return a type matching QgsField type</li>
+</ul>
+
+<p>Note that while working with QString fields with a date/time value and format function (used in a default value), 
+it is important to match field format with a given format there.</p>
+
+<p>###QgsField type
+How the result value is saved depends on how a QgsField is defined. Following types are supported:</p>
+
+<p>Default values are marked as “<strong>-</strong>”</p>
+
+<p><strong>Type: QString</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">field format</th>
+      <th style="text-align: center">widget display</th>
+      <th style="text-align: center">default value</th>
+      <th style="text-align: center">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Date</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">format_date(now(), 'yyyy-MM-dd')</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">''2020-09-09'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Custom (dd/MM/yyyy)</td>
+      <td style="text-align: center">dd/MM/yyyy</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">format_date(now(), 'dd/MM/yyyy')</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">'09/09/2020'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Time</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">format_date(now(), 'HH:mm:ss')</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">'12:34:56'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Custom (HH-mm-ss)</td>
+      <td style="text-align: center">HH-mm-ss</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">format_date(now(), 'HH-mm-ss')</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">'12-34-56'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Date Time</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">format_date(now(), 'yyyy-MM-dd HH:mm:ss')</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">'2020-09-09 12:34:56'</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Custom (dd/MM/yyyy HH-mm-ss)</td>
+      <td style="text-align: center">dd/MM/yyyy HH-mm-ss</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">format_date(now(), 'dd/MM/yyyy HH-mm-ss')</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">'09/09/2020 12-34-56'</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Type: QDate</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">field format</th>
+      <th style="text-align: center">widget display</th>
+      <th style="text-align: center">default value</th>
+      <th style="text-align: center">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Date</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">0000-00-00</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Date</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">now()</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">2020-09-09</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Date</td>
+      <td style="text-align: center">dd/MM/yyyy</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">now()</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">09/09/2020</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Type: QDateTime</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">field format</th>
+      <th style="text-align: center">widget display</th>
+      <th style="text-align: center">default value</th>
+      <th style="text-align: center">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Time</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">00:00:00</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Time</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">now()</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">12:34:56</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Time</td>
+      <td style="text-align: center">HH/mm/ss</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">now()</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">12/34/56</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Date Time</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">0000-00-00 00:00:00</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Date Time</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">now()</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">2020-09-09 12:34:56</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Date Time</td>
+      <td style="text-align: center">dd/MM/yyyy hh-mm-ss</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">now()</code></td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">09/09/2020 12-34-56</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="project-settings">Project settings</h2>
+
+<p>Having Map Themes, will help switching between different background layers in Input (e.g. one map theme set up with aerial photo and another with cartography rasters.)</p>
+
+<p>Ensure the paths are set to Relative under Project Properties. All paths to the project data in Input is relative to the project location.</p>
+
+<p>Input does not include all the SVGs within QGIS. Therefore, if you are using SVGs for your layer styling, ensure those are copied across to the project folder.</p>
+
+<p>An example of Project Properties in QGIS for survey layers and identifiable layers can be seen below:</p>
+
+<p><img src="../images/qgis_project_properties.png" alt="Preview panel in Input based on Display settings in QGIS" /></p>
+
+<h2 id="qgis-variables">QGIS variables</h2>
+
+<p>Input recognizes several variables that can be used in QGIS expressions (they are also supported by Mergin plugin for QGIS):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable name</th>
+      <th>Sample value</th>
+      <th>Scope</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">@mergin_username</code></td>
+      <td><code class="language-plaintext highlighter-rouge">martin</code></td>
+      <td>global</td>
+      <td>Name of the user currently logged in to Mergin</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">@mergin_url</code></td>
+      <td><code class="language-plaintext highlighter-rouge">https://public.cloudmergin.com</code></td>
+      <td>global</td>
+      <td>URL of the Mergin service</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">@mergin_project_name</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Tree survey</code></td>
+      <td>project</td>
+      <td>Name of the active Mergin project</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">@mergin_project_owner</code></td>
+      <td><code class="language-plaintext highlighter-rouge">martin</code></td>
+      <td>project</td>
+      <td>Name of the owner of the active Mergin project</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">@mergin_project_full_name</code></td>
+      <td><code class="language-plaintext highlighter-rouge">martin/Tree survey</code></td>
+      <td>project</td>
+      <td>Owner and project name joined with a forward slash</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">@mergin_project_version</code></td>
+      <td><code class="language-plaintext highlighter-rouge">42</code></td>
+      <td>project</td>
+      <td>Current version of the active Mergin project</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A common use case is to use <code class="language-plaintext highlighter-rouge">@mergin_username</code> as the default value for one of the fields in a survey layer to automatically track who has added (and/or modified) a particular record.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Input Help</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Input Help</li><li><a class="u-email" href="mailto:info@lutraconsulting.co.uk">info@lutraconsulting.co.uk</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">lutraconsulting</span></a></li><li><a href="https://github.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">lutraconsulting</span></a></li><li><a href="https://www.linkedin.com/in/lutra-consulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">lutra-consulting</span></a></li><li><a href="https://www.twitter.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">lutraconsulting</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Survey made easy</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

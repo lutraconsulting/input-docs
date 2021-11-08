@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Input Help | Survey made easy</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Input Help" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Survey made easy" />
+<meta property="og:description" content="Survey made easy" />
+<link rel="canonical" href="/howto/external_gps" />
+<meta property="og:url" content="/howto/external_gps" />
+<meta property="og:site_name" content="Input Help" />
+<script type="application/ld+json">
+{"description":"Survey made easy","url":"/howto/external_gps","@type":"WebPage","headline":"Input Help","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Input Help" /><!-- based on default minima template https://github.com/jekyll/minima/blob/master/_includes/google-analytics.html -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144776738-1"></script>
+<script>
+  window['ga-disable-UA-144776738-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // we need more settings than in default template
+  gtag('config', 'UA-144776738-1', {
+    'linker': {
+      'domains': ['inputapp.io', 'cloudmergin.com'],
+      'accept_incoming': true
+    },
+    'anonymize_ip': true
+  });
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+    <img src="https://inputapp.io/img/logo.svg" style="margin-top: -10px" width="90">
+    <!--Input Help-->
+    </a> <span class="site-title"> &nbsp; Help Center</span><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/quick-start.html">Quick Start Guide</a><a class="page-link" href="/faq">FAQ</a><a class="page-link" href="/developers.html">Developers</a><a class="page-link" href="/support">Support</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <div class="post-content">
+    <!--- IMPORTANT: This permlink is referenced from InputApp -->
+
+<h1 id="using-external-gps">Using external GPS</h1>
+
+<p>It is possible to use an external GPS device with Input app. Input does not offer an interface to connect, set up or configure the external GPS device. The set up should be carried out from the device operating system (e.g. Android or iOS).</p>
+
+<p>Once the GPS source is configured from the OS level, Input will use the signal from the configured source to display or capture location data.</p>
+
+<p>It is therefore important to note, first your mobile or tablet offers the functionality to connect with an external GPS device at the system level and secondly, the external GPS device communicates with the mobile/tablet through a standard interface.</p>
+
+<p>For example, earlier Android devices did not offer system level GPS override from an external device.</p>
+
+<p>In this section, we explore connecting to an external GPS device through Bluetooth using Android and iOS mobiles/tablets.</p>
+
+<h2 id="android">Android</h2>
+
+<p>To use an external GPS with your Android mobile/tablet:</p>
+<ul>
+  <li>Ensure you are using Android 6 or later (Input does not support earlier Android!)</li>
+  <li>Your external GPS can be paired with your mobile/tablet through Bluetooth</li>
+</ul>
+
+<p>Next step is to install an app to provide mock location to Input. For that, we recommend using <a href="https://play.google.com/store/apps/details?id=googoo.android.btgps">Bluetooth GPS</a> from the Google Play Store.</p>
+
+<p>Android offers <strong>Allow mock locations</strong> to use the GPS apps (e.g. Bluetooth GPS app) as your source of GPS signal. The option is an advanced setting under <strong>Developers options</strong>. To enable <strong>Allow mock locations</strong>:</p>
+<ul>
+  <li>In Android device, enable <strong>Developer options</strong>. This is by default a hidden option under your system settings. To be able to see the options:
+    <ul>
+      <li>On newer Android versions, go to <strong>Android Settings</strong> &gt; <strong>About phone</strong> and then scroll down to find the <strong>Build number</strong>. Tap the build number 7 times and a message appears with a count-down until you <strong>become a developer</strong>.
+-On older Android versions, the developer settings can be made visible under the <strong>Android Settings</strong> &gt; <strong>Applications</strong> &gt; <strong>Development</strong>.</li>
+    </ul>
+  </li>
+  <li>Once you have the developers option enabled, go to <strong>System</strong> &gt; <strong>Advanced</strong> &gt; <strong>Developer options</strong> &gt; <strong>Select mock location app</strong> and select <strong>Bluetooth GPS</strong></li>
+</ul>
+
+<p><img src="../images/external_gps_android_mock.png" alt="Mcok location" /></p>
+
+<p>Now, pair your external GPS device to your mobile/tablet through Bluetooth. Then open the <strong>Bluetooth GPS</strong> app and from the <strong>Select paired GPS device and connect</strong> drop-down menu, select your external GPS. Make sure you have also selected the box for <strong>Enable Mock GPS Provider</strong>. Select <strong>Connect</strong>. You can now open Input and it should be using the external GPS device.</p>
+
+<p><img src="../images/external_gps_android_bluetooth.png" alt="GPS Bluetooth" /></p>
+
+<h2 id="ios">iOS</h2>
+<p>To use your external GPS device with iPhone or iPad, you need to pair the device via Bluetooth. Once the device is paired, the signal from external GPS will be used as the primary source.</p>
+
+<p><strong>Note:</strong> users have reported that they have to switch on Airplane mode to be able to use the external GPS device.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Input Help</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Input Help</li><li><a class="u-email" href="mailto:info@lutraconsulting.co.uk">info@lutraconsulting.co.uk</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">lutraconsulting</span></a></li><li><a href="https://github.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">lutraconsulting</span></a></li><li><a href="https://www.linkedin.com/in/lutra-consulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">lutra-consulting</span></a></li><li><a href="https://www.twitter.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">lutraconsulting</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Survey made easy</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

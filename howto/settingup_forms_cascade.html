@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Advanced forms with cascade or drill-down forms | Input Help</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Advanced forms with cascade or drill-down forms" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Survey made easy" />
+<meta property="og:description" content="Survey made easy" />
+<link rel="canonical" href="/howto/settingup_forms_cascade" />
+<meta property="og:url" content="/howto/settingup_forms_cascade" />
+<meta property="og:site_name" content="Input Help" />
+<script type="application/ld+json">
+{"description":"Survey made easy","url":"/howto/settingup_forms_cascade","@type":"WebPage","headline":"Advanced forms with cascade or drill-down forms","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Input Help" /><!-- based on default minima template https://github.com/jekyll/minima/blob/master/_includes/google-analytics.html -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144776738-1"></script>
+<script>
+  window['ga-disable-UA-144776738-1'] = window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1";
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // we need more settings than in default template
+  gtag('config', 'UA-144776738-1', {
+    'linker': {
+      'domains': ['inputapp.io', 'cloudmergin.com'],
+      'accept_incoming': true
+    },
+    'anonymize_ip': true
+  });
+</script>
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+    <img src="https://inputapp.io/img/logo.svg" style="margin-top: -10px" width="90">
+    <!--Input Help-->
+    </a> <span class="site-title"> &nbsp; Help Center</span><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/quick-start.html">Quick Start Guide</a><a class="page-link" href="/faq">FAQ</a><a class="page-link" href="/developers.html">Developers</a><a class="page-link" href="/support">Support</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Advanced forms with cascade or drill-down forms</h1>
+  </header>
+
+  <div class="post-content">
+    <p>Cascade or drill-down forms are the types of forms that the values listed in one field depend on the value selected in another field.</p>
+
+<p>In this <a href="https://public.cloudmergin.com/projects/documentation/form_cascade/tree">example</a>, we have multiple databases:</p>
+<ul>
+  <li>car-model</li>
+  <li>car-manufacturer</li>
+  <li>car-types</li>
+  <li>wheel-check</li>
+  <li>color</li>
+</ul>
+
+<p>In the steps below, we will capture points representing <strong>car</strong> layer: the choices from the value relation will be filtered based on the previous field user picks. For example, if user selects <strong>Trucks</strong> as <strong>Car type (truck/car)</strong>, the <strong>Car-Manufacturer</strong> field will present user with <strong>DAF Trucks</strong>, <strong>Scania</strong> or <strong>MAN</strong>. Likewise, the next drop-down menu for <strong>Car-Model</strong> will change accordingly based on the <strong>Car-Manufacturer</strong> selection.</p>
+
+<h2 id="qgis">QGIS</h2>
+
+<p>Below is a dataset named <code class="language-plaintext highlighter-rouge">car</code>, which is a point layer, with the following attributes:</p>
+
+<p><img src="../images/qgis_forms_cascade3.png" alt="car" /></p>
+
+<p>The aim is to create an attribute form, where users can populate <code class="language-plaintext highlighter-rouge">Car-Type</code>, <code class="language-plaintext highlighter-rouge">Car-Manufacturer</code>, &amp; <code class="language-plaintext highlighter-rouge">Car-Model</code> with information that is pre-defined.</p>
+
+<p>Each of these fields are stored under a tab called <code class="language-plaintext highlighter-rouge">Survey</code> in the Form Layout view.</p>
+
+<p><img src="../images/qgis_forms_cascade4.png" alt="car" /></p>
+
+<p>As well as the spatial data found in car, there are also several non-spatial tables, such as <code class="language-plaintext highlighter-rouge">car-type</code>, <code class="language-plaintext highlighter-rouge">car-manufacturer</code> &amp; <code class="language-plaintext highlighter-rouge">car-model</code>. These are look-up tables that are going to be used to populate the forms as data entry takes place.</p>
+
+<h3 id="car-type">Car type</h3>
+
+<p>The first field to deal with during data entry is <code class="language-plaintext highlighter-rouge">Car-type</code>. A Value Relation widget is used here, referring specifically to the <code class="language-plaintext highlighter-rouge">car-type</code> look-up table. The key column is set as the <code class="language-plaintext highlighter-rouge">fid</code> (a unique value for each row), and the value column is set to <code class="language-plaintext highlighter-rouge">name</code>:</p>
+
+<p><img src="../images/qgis_forms_cascade5.png" alt="car" /></p>
+
+<p>The look-up table is structured as follows:</p>
+
+<p><img src="../images/qgis_forms_cascade6.png" alt="car" /></p>
+
+<p>This means, that when entering data into this field, the user is presented with these four <code class="language-plaintext highlighter-rouge">name</code> values:</p>
+
+<p><img src="../images/qgis_forms_cascade7.png" alt="car" /></p>
+
+<p>Note: <code class="language-plaintext highlighter-rouge">(no selection)</code> is an option because “Allow NULL value” has been checked in the Widget options.</p>
+
+<h3 id="car-manufacturer">Car-manufacturer</h3>
+
+<p>The next field to populate is <code class="language-plaintext highlighter-rouge">Car-manufacturer</code>. The values in this field are dependent on the value selected in <code class="language-plaintext highlighter-rouge">Car-type</code>. Again, a Value Relation widget is used, with reference to the <code class="language-plaintext highlighter-rouge">car-manufacturer</code> look-up table. The key column is set to <code class="language-plaintext highlighter-rouge">fid</code> and the value column is set to <code class="language-plaintext highlighter-rouge">name</code>. Because the desired behaviour is for selectable values to be limited by the <code class="language-plaintext highlighter-rouge">Car-type</code>, an expression is used:</p>
+
+<p><img src="../images/qgis_forms_cascade8.png" alt="car" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">"type" = current_value('Car-Type')</code> - is used to filter the look-up table (<code class="language-plaintext highlighter-rouge">car-manufacturer</code>) by the type field. The expression looks for the users current value in <code class="language-plaintext highlighter-rouge">Car-type</code>, takes that value, and uses it to filter the look-up table, leaving only features where the values match.</p>
+
+<p><img src="../images/qgis_forms_cascade9.png" alt="car" /></p>
+
+<p>In order to get this relationship between look-up tables and the spatial data working correctly, a Value Relation widget also needs to be set up on the type field in the <code class="language-plaintext highlighter-rouge">car-manufacturer</code> look-up table:</p>
+
+<p><img src="../images/qgis_forms_cascade10.png" alt="car" /></p>
+
+<p>Once, both the widgets for the field in the spatial data and associated look-up table are in place, the data entry process should now be working as a drill-down/cascading form:</p>
+
+<p><img src="../images/qgis_forms_cascade11.png" alt="car" /></p>
+
+<p>Based on a selection of <code class="language-plaintext highlighter-rouge">Truck</code> for “Car type (truck/car)”, only three manufacturers are available to select.</p>
+
+<h3 id="car-model">Car-model</h3>
+<p>This field works in an almost identical way to <code class="language-plaintext highlighter-rouge">Car-manufacturer</code> and demonstrates that more than one cascade/drill-down can be in place. It uses Value Relation widgets with the look-up table <code class="language-plaintext highlighter-rouge">car-model</code>.</p>
+
+<h2 id="input">Input</h2>
+
+<p>To use the cascade form in Input:</p>
+
+<ul>
+  <li>Open Input on your device and from <strong>Projects</strong> &gt; <strong>Explore</strong> download <strong>documentation\form_cascade</strong></li>
+  <li>Open the project</li>
+  <li>Select <strong>Record</strong> and add a point</li>
+  <li>The form will appear</li>
+  <li>Under <strong>Survey</strong> tab, for <strong>Car-type</strong> select <strong>Car</strong>.</li>
+  <li><strong>Manufacturer</strong> field should short list <strong>Mercedes-Benz</strong>, <strong>Skoda</strong> and <strong>Audi</strong>. Select <strong>Audi</strong></li>
+  <li>For <strong>Car-Model</strong> select <strong>A8</strong></li>
+</ul>
+
+<p><img src="../images/input_forms_cascade.gif" alt="slider" /></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Input Help</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Input Help</li><li><a class="u-email" href="mailto:info@lutraconsulting.co.uk">info@lutraconsulting.co.uk</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">lutraconsulting</span></a></li><li><a href="https://github.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">lutraconsulting</span></a></li><li><a href="https://www.linkedin.com/in/lutra-consulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">lutra-consulting</span></a></li><li><a href="https://www.twitter.com/lutraconsulting"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">lutraconsulting</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Survey made easy</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
